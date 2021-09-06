@@ -87,6 +87,23 @@ bool = isFalsyArray( null );
 
 <!-- /.examples -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/assert/is-falsy`][@stdlib/assert/is-falsy]: test if a value is falsy.
+-   [`@stdlib/assert/is-truthy-array`][@stdlib/assert/is-truthy-array]: test if a value is an array-like object containing only truthy values.
+
+</section>
+
+<!-- /.related -->
+
+<!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
 
 <section class="main-repo" >
 
@@ -141,6 +158,14 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 [stdlib-authors]: https://github.com/stdlib-js/stdlib/graphs/contributors
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/assert-is-falsy-array/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/assert/is-falsy]: https://github.com/stdlib-js/assert-is-falsy
+
+[@stdlib/assert/is-truthy-array]: https://github.com/stdlib-js/assert-is-truthy-array
+
+<!-- </related-links> -->
 
 </section>
 
