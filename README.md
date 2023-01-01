@@ -24,30 +24,38 @@ limitations under the License.
 
 > Test if a value is an array-like object containing only falsy values.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-falsy-array
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var isFalsyArray = require( '@stdlib/assert-is-falsy-array' );
+isFalsyArray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var isFalsyArray = require( 'path/to/vendor/umd/assert-is-falsy-array/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.isFalsyArray;
+})();
+</script>
 ```
 
 #### isFalsyArray( value )
@@ -72,8 +80,13 @@ bool = isFalsyArray( [ [], {} ] );
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var isFalsyArray = require( '@stdlib/assert-is-falsy-array' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var bool = isFalsyArray( [ null, '', NaN, 0, void 0, false ] );
 // returns true
@@ -89,6 +102,11 @@ bool = isFalsyArray( false );
 
 bool = isFalsyArray( null );
 // returns false
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -181,9 +199,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-falsy]: https://github.com/stdlib-js/assert-is-falsy
+[@stdlib/assert/is-falsy]: https://github.com/stdlib-js/assert-is-falsy/tree/umd
 
-[@stdlib/assert/is-truthy-array]: https://github.com/stdlib-js/assert-is-truthy-array
+[@stdlib/assert/is-truthy-array]: https://github.com/stdlib-js/assert-is-truthy-array/tree/umd
 
 <!-- </related-links> -->
 
