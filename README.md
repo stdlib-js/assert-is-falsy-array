@@ -103,8 +103,8 @@ bool = isFalsyArray( null );
 
 ## See Also
 
--   <span class="package-name">[`@stdlib/assert/is-falsy`][@stdlib/assert/is-falsy]</span><span class="delimiter">: </span><span class="description">test if a value is falsy.</span>
--   <span class="package-name">[`@stdlib/assert/is-truthy-array`][@stdlib/assert/is-truthy-array]</span><span class="delimiter">: </span><span class="description">test if a value is an array-like object containing only truthy values.</span>
+-   <span class="package-name">[`@stdlib/assert-is-falsy`][@stdlib/assert/is-falsy]</span><span class="delimiter">: </span><span class="description">test if a value is falsy.</span>
+-   <span class="package-name">[`@stdlib/assert-is-truthy-array`][@stdlib/assert/is-truthy-array]</span><span class="delimiter">: </span><span class="description">test if a value is an array-like object containing only truthy values.</span>
 
 </section>
 
