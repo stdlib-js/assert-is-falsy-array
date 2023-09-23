@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@deno/mod.js';
+import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@v0.1.0-deno/mod.js';
 ```
 
 #### isFalsyArray( value )
@@ -68,7 +68,7 @@ bool = isFalsyArray( [ [], {} ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@deno/mod.js';
+import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@v0.1.0-deno/mod.js';
 
 var bool = isFalsyArray( [ null, '', NaN, 0, void 0, false ] );
 // returns true
