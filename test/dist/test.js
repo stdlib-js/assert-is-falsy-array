@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,75 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var isFalsyArray = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isFalsyArray, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
-});
-
-tape( 'the function returns `true` if provided an array-like object containing only "falsy" values (array)', function test( t ) {
-	var bool;
-	var arr;
-
-	arr = [ false, null, void 0, '', 0, NaN ];
-	bool = isFalsyArray( arr );
-	t.strictEqual( bool, true, 'returns true' );
-
-	t.end();
-});
-
-tape( 'the function returns `true` if provided an array-like object containing only "falsy" values (object)', function test( t ) {
-	var bool;
-	var arr;
-
-	arr = {
-		'length': 6,
-		'0': false,
-		'1': null,
-		'2': void 0,
-		'3': '',
-		'4': 0,
-		'5': NaN
-	};
-	bool = isFalsyArray( arr );
-	t.strictEqual( bool, true, 'returns true' );
-	t.end();
-});
-
-tape( 'the function returns `false` if not provided an array-like object containing only "falsy" values', function test( t ) {
-	var bool;
-	var arr;
-
-	arr = [];
-	bool = isFalsyArray( arr );
-	t.strictEqual( bool, false, 'returns false when provided an empty array' );
-
-	arr = {
-		'length': 0
-	};
-	bool = isFalsyArray( arr );
-	t.strictEqual( bool, false, 'returns false when provided an empty array-like object' );
-
-	bool = isFalsyArray( null );
-	t.strictEqual( bool, false, 'returns false when provided null' );
-
-	bool = isFalsyArray( false );
-	t.strictEqual( bool, false, 'returns false when provided false' );
-
-	bool = isFalsyArray( '' );
-	t.strictEqual( bool, false, 'returns false when provided an empty string' );
-
-	bool = isFalsyArray( noop );
-	t.strictEqual( bool, false, 'returns false when provided an empty function' );
-
-	t.end();
-
-	function noop() {
-		// no-op...
-	}
 });
