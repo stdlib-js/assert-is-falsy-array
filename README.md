@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-falsy-array/tags). For example,
+
+```javascript
 import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@v0.2.3-esm/index.mjs';
 ```
 
@@ -73,7 +78,7 @@ bool = isFalsyArray( [ [], {} ] );
 <body>
 <script type="module">
 
-import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@v0.2.3-esm/index.mjs';
+import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@esm/index.mjs';
 
 var bool = isFalsyArray( [ null, '', NaN, 0, void 0, false ] );
 // returns true
