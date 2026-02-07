@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/assert-is-falsy-array/tags). For example,
+
+```javascript
 import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@v0.2.3-deno/mod.js';
 ```
 
@@ -68,7 +73,7 @@ bool = isFalsyArray( [ [], {} ] );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@v0.2.3-deno/mod.js';
+import isFalsyArray from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-falsy-array@deno/mod.js';
 
 var bool = isFalsyArray( [ null, '', NaN, 0, void 0, false ] );
 // returns true
